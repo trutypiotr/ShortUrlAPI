@@ -17,4 +17,4 @@ class GenerateShortUrl(generics.CreateAPIView):
 class GetOriginalUrl(generics.RetrieveAPIView):
     queryset = Url.objects.all()
     serializer_class = UrlSerializer
-    lookup_field = 'key'
+    lookup_field = "key"
